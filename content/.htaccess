@@ -18,6 +18,14 @@ RewriteRule ^u2f$ U2F/ [L,R=301]
 RewriteRule ^mobile/(.*)$ Mobile/$1 [L,R=301]
 RewriteRule ^mobile$ Mobile/ [L,R=301]
 
+# Redirect mobile/ios to Mobile/iOS
+RewriteRule ^mobile/ios(.*)$ Mobile/iOS$1 [L,R=301]
+RewriteRule ^mobile/ios$ Mobile/iOS [L,R=301]
+
+# Redirect mobile/android to Mobile/Android
+RewriteRule ^mobile/android(.*)$ Mobile/Android$1 [L,R=301]
+RewriteRule ^mobile/android$ Mobile/Android [L,R=301]
+
 # Redirect yubikey5ci to Mobile
 RewriteRule ^yubikey5ci/(.*)$ /Mobile/$1 [L,R=301]
 RewriteRule ^yubikey5ci$ /Mobile/ [L,R=301]
